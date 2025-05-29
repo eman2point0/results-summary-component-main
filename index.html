@@ -93,6 +93,77 @@
         margin-bottom: 2rem;
       }
 
+      .bottom-section {
+        height: 55%;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .summary-title {
+        margin: 30px 0px 30px 20px;
+      }
+      .summary-section {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        margin: 0 20px;
+        margin-bottom: 30px;
+      }
+
+      .summary-card {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex: 1;
+        border-radius: 10px;
+        padding: 0 20px;
+      }
+
+      #reaction-card {
+        background-color: hsla(0, 100%, 67%, 0.1);
+      }
+
+      #memory-card {
+        background-color: hsla(39, 100%, 56%, 0.1);
+      }
+
+      #verbal-card {
+        background-color: hsla(166, 100%, 37%, 0.1);
+      }
+
+      #visual-card {
+        background-color: hsla(234, 85%, 45%, 0.1);
+      }
+
+      #reaction-card .category-title {
+        color: hsl(0, 100%, 67%);
+      }
+      #memory-card .category-title {
+        color: hsl(39, 100%, 56%);
+      }
+      #verbal-card .category-title {
+        color: hsl(166, 100%, 37%);
+      }
+      #visual-card .category-title {
+        color: hsl(234, 85%, 45%);
+      }
+
+      .left {
+        display: flex;
+        gap: 10px;
+      }
+
+      button {
+        color: white;
+        background-color: hsl(224, 30%, 27%);
+        border: none;
+        border-radius: 20px;
+        padding: 10px;
+        margin: 0 20px;
+        font-size: 1rem;
+      }
+
       .attribution {
         font-size: 11px;
         text-align: center;
@@ -117,32 +188,40 @@
     <section class="bottom-section">
       <h3 class="summary-title">Summary</h3>
       <div class="summary-section">
-        <div class="summary-card">
-          <img src="./assets/images/icon-reaction.svg" />
-          <h4 class="category-title">Reaction</h4>
+        <div id="reaction-card" class="summary-card">
+          <div class="left">
+            <img src="./assets/images/icon-reaction.svg" />
+            <h4 class="category-title">Reaction</h4>
+          </div>
           <p class="summary-results">
-            80 <span class="out-of-total">/ 100</span>
+            80 <span class="out-of-total"> / 100</span>
           </p>
         </div>
-        <div class="summary-card">
-          <img src="./assets/images/icon-memory.svg" />
-          <h4 class="category-title">Memory</h4>
+        <div id="memory-card" class="summary-card">
+          <div class="left">
+            <img src="./assets/images/icon-memory.svg" />
+            <h4 class="category-title">Memory</h4>
+          </div>
           <p class="summary-results">
-            92 <span class="out-of-total">/ 100</span>
+            92 <span class="out-of-total"> / 100</span>
           </p>
         </div>
-        <div class="summary-card">
-          <img src="./assets/images/icon-verbal.svg" />
-          <h4 class="category-title">Verbal</h4>
+        <div id="verbal-card" class="summary-card">
+          <div class="left">
+            <img src="./assets/images/icon-verbal.svg" />
+            <h4 class="category-title">Verbal</h4>
+          </div>
           <p class="summary-results">
-            61 <span class="out-of-total">/ 100</span>
+            61 <span class="out-of-total"> / 100</span>
           </p>
         </div>
-        <div class="summary-card">
-          <img src="./assets/images/icon-visual.svg" />
-          <h4 class="category-title">Visual</h4>
+        <div id="visual-card" class="summary-card">
+          <div class="left">
+            <img src="./assets/images/icon-visual.svg" />
+            <h4 class="category-title">Visual</h4>
+          </div>
           <p class="summary-results">
-            72 <span class="out-of-total">/ 100</span>
+            72 <span class="out-of-total"> / 100</span>
           </p>
         </div>
       </div>
